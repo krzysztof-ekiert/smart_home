@@ -19,5 +19,5 @@ class Device:
         return None
 
     @abstractmethod
-    def status_update(self) -> str:
-        return "Status"
+    def status_update(self, data) -> str:
+        return data
