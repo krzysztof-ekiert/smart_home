@@ -20,4 +20,4 @@ class Device:
 
     @abstractmethod
     def status_update(self):
-        return ""
+        return "Status OK"
