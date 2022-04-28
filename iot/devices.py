@@ -7,7 +7,11 @@ class HueLight(Device):
 
     def disconnect(self): print("Disconnecting Hue Light")
 
-    def send_message(self, mt: MessageType, data: str): print(f"Hue Light handling message of type {mt.name} with data [{data}].")
+    def send_message(self, mt: MessageType, data: str):
+        if data == "":
+            print(f"Hue Light handling message of type {mt.name}.")
+        else:
+            print(f"Hue Light handling message of type {mt.name} with data [{data}].")
 
     def status_update(self): print("hue_light_status_ok")
 
@@ -17,7 +21,11 @@ class SmartSpeaker(Device):
 
     def disconnect(self): print("Disconnecting Smart Speaker")
 
-    def send_message(self, mt: MessageType, data: str): print(f"Smart Speaker handling message of type {mt.name} with data [{data}].")
+    def send_message(self, mt: MessageType, data: str):
+        if data == "":
+            print(f"Smart Speaker handling message of type {mt.name}.")
+        else:
+            print(f"Smart Speaker handling message of type {mt.name} with data [{data}].")
 
     def status_update(self): print("smart_speaker_status_ok")
 
@@ -27,7 +35,11 @@ class Curtains(Device):
 
     def disconnect(self): print("Disconnecting curtains")
 
-    def send_message(self, mt: MessageType, data: str): print(f"Curtains handling message of type {mt.name} with data [{data}].")
+    def send_message(self, mt: MessageType, data: str):
+        if data == "":
+            print(f"Curtains handling message of type {mt.name}.")
+        else:
+            print(f"Curtains handling message of type {mt.name} with data [{data}].")
 
     def status_update(self): print("curtains_status_ok")
 
