@@ -13,13 +13,13 @@ def main():
 
     iotservice.test_devices()
 
-    for i in iotservice.deviceList:
-        id = i[0]
-        iotservice.unregister_device(id)
+    idsdel=[]
 
     for i in iotservice.deviceList:
-        id = i[0]
-        iotservice.unregister_device(id)
+        idsdel.append(i[0])
+
+    for j in idsdel:
+        iotservice.unregister_device(j)
 
 
 main()
