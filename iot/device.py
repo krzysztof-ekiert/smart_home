@@ -1,10 +1,8 @@
 from abc import ABC, abstractmethod
 
-from message import MessageType
+from iot.message import MessageType
 
 class Device:
-    def __init__(self, type):
-        self.type = type
 
     @abstractmethod
     def connect(self):

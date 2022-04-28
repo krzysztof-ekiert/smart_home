@@ -1,5 +1,4 @@
-from device import Device
-import message
+from iot.device import Device
 
 def collect_diagnostics(dev: Device):
     print("Connecting to diagnostics server.")

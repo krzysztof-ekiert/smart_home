@@ -1,5 +1,5 @@
-from device import Device
-from message import MessageType
+from iot.device import Device
+from iot.message import MessageType
 
 class HueLight(Device):
 

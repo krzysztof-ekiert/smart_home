@@ -1,8 +1,8 @@
 
 
-import message
-import device
-import devices
-import diagnostics
-import service
+import iot.message
+import iot.device
+import iot.devices
+import iot.diagnostics
+import iot.service
 
