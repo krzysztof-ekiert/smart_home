@@ -51,4 +51,3 @@ class IOTService:
         global deviceList
         for i in deviceList:
             collect_diagnostics(i[1])
-            
